@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>_THIS_IS_MY_PERSONAL_PROJECT_</title>
+        <link rel="stylesheet" type="text/css" href="personal.css">
+    </head>
+    <body>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li><br>
+            <li><a href="aboutme.html">About</a></li><br>
+            <li><a href="contacts.html">Contacts</a></li><br>
+            <li><a href="formSuccess1.html">Skip the Survey..</a></li>
+        </ul>
+        <h1><u>Welcome to my Personal Website.<br>
+            This is a personal survey.</u>
+        </h1>
+        <hr style="height:2px;border-width:0;color:black;background-color:gray">
+        <p>Before we start, I would like to let you (the user) know that I am by no means a professional coder or website creator. I am just a 14 year-old kid who likes sleeping and videogames.<br>
+           Thanks!
+        </p>
+        <hr style="height:2px;border-width:0;color:black;background-color:gray">
+        <form  action="./formSuccess1.html">
+            <label for="fname"><u>First name:</u></label><br>
+            <input type="text" id="fname" name="fname" value="" minlength="5" maxlength="10000000" required size="25"><br>
+            <label for="lname"><u>Last name:</u></label><br>
+            <input type="text" id="lname" name="lname" value="" minlength="4" maxlength="10000000" required size="25"><br>
+            <label for="Age"><u>Age:</u></label><br> 
+            <input type="number" id="age" name="age" value="" required size="25"><br>
+            <label for="email"><u>Email:</u></label><br>
+            <input type="text" id="email" name="email" value="" minlength="5" maxlength="10000000" required size="25"><br>
+            <label for="password"><u>Password:</u></label><br>
+            <input aria-describedby="passwordrules" id="password" type="password" required size="25">
+            <div hidden role="tooltip" id="passwordrules">
+                <hr style="height:2px;border-width:0;color:black;background-color:gray">
+                <p>
+                    Password Rules:
+                </p>
+                <ul>
+                  <li>Minimum of 8 characters</li>
+                  <li>Include at least one lowercase letter, one uppercase letter, one number and one special character</li>
+                  <li>Unique to this website</li>
+                </ul>
+              </div>
+            <p><u>Do you...</u></p>
+            <input type="checkbox" id="subject1" value="" >
+            <label for="subject1">Like cats?</label><br>
+            <input type="checkbox" id="subject2" value="" >
+            <label for="subject2">Like videogames?</label><br>
+            <input type="checkbox" id="subject3" value="" >
+            <label for="subject3">Like sleeping?</label> <br>  
+            <hr style="height:2px;border-width:0;color:BLACK;background-color:gray">
+            <i><label for="gender"><u>Gender:</u></label>
+            </i><br>
+            <input type="radio" id="male" name="gender" value="" >
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="" >
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="" >
+            <label for="other">Other</label><br>
+            <hr style="height:2px;border-width:0;color:black;background-color:gray">
+            
+            <input type="submit" value="Submit"><br>
+        </form>
+    </body>
+</html>
